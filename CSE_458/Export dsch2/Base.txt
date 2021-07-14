@@ -1,0 +1,59 @@
+// DSCH 2.7a
+// 9/7/2003 6:09:51 PM
+// C:\Documents and Settings\Administrator\My Documents\Dsch2\Book on CMOS\Base.sch
+
+module Base( in2,in2,in1,in1,in2,in1,in1,in2,
+ Enable,in2,in1,in1,in1,in2,in1,in1,
+ outOr,outNand,outXnor,outXor,outNor,outAnd,outBuf,outInv,
+ outNotIf1);
+ input in2,in2,in1,in1,in2,in1,in1,in2;
+ input Enable,in2,in1,in1,in1,in2,in1,in1;
+ output outOr,outNand,outXnor,outXor,outNor,outAnd,outBuf,outInv;
+ output outNotIf1;
+ nor #(16) or(outNor,in1,in2);
+ or #(16) or(outOr,in1,in2);
+ xnor #(16) xnor(outXnor,in1,in2);
+ and #(16) and(outAnd,in2,in1);
+ xor #(16) xor(outXor,in1,in2);
+ nand #(16) and(outNand,in2,in1);
+ not #(10) inv(outInv,in1);
+ notif1 #(10) inv(outNotIf1,in1,Enable);
+ buf #(10) 1(outBuf,in1);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in2=~in2;
+#2000 in2=~in2;
+#4000 in1=~in1;
+#8000 in1=~in1;
+#16000 in2=~in2;
+#32000 in1=~in1;
+#64000 in1=~in1;
+#128000 in2=~in2;
+#256000 Enable=~Enable;
+#512000 in2=~in2;
+#1024000 in1=~in1;
+#2048000 in1=~in1;
+#4096000 in1=~in1;
+#8192000 in2=~in2;
+#16384000 in1=~in1;
+#32768000 in1=~in1;
+
+// Simulation parameters
+// in2 CLK 10 10
+// in2 CLK 20 20
+// in1 CLK 40 40
+// in1 CLK 80 80
+// in2 CLK 160 160
+// in1 CLK 320 320
+// in1 CLK 640 640
+// in2 CLK 1280 1280
+// Enable CLK 2560 2560
+// in2 CLK 5120 5120
+// in1 CLK 10240 10240
+// in1 CLK 20480 20480
+// in1 CLK 40960 40960
+// in2 CLK 81920 81920
+// in1 CLK 163840 163840
+// in1 CLK 327680 327680

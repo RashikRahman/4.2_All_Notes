@@ -1,0 +1,38 @@
+// DSCH 2.6j
+// 6/5/2003 9:16:22 PM
+// C:\Documents and Settings\Administrator\My Documents\Dsch2\Book on CMOS\pllVco.sch
+
+module pllVco( Vc,Vosc);
+ input Vc;
+ output Vosc;
+ nmos #(107) nmos(w2,vss,Vc); // 2.0u 0.25u
+ nmos #(121) nmos(w5,w2,w4); // 2.0u 0.25u
+ pmos #(121) pmos(w5,w6,w4); // 2.0u 0.25u
+ nmos #(94) nmos(vdd,Vc,w7); // 1.0u 0.12u
+ nmos #(107) nmos(w8,vss,Vc); // 2.0u 0.25u
+ nmos #(149) nmos(w9,vss,Vc); // 2.0u 0.25u
+ nmos #(121) nmos(w11,w8,w10); // 2.0u 0.25u
+ pmos #(121) pmos(w11,w12,w10); // 2.0u 0.25u
+ pmos #(107) pmos(w12,vdd,w9); // 2.0u 0.25u
+ pmos #(107) pmos(w13,vdd,w9); // 2.0u 0.25u
+ pmos #(121) pmos(w4,w13,w11); // 2.0u 0.25u
+ nmos #(121) nmos(w4,w14,w11); // 2.0u 0.25u
+ nmos #(107) nmos(w14,vss,Vc); // 2.0u 0.25u
+ nmos #(107) nmos(w15,vss,Vc); // 2.0u 0.25u
+ nmos #(142) nmos(Vosc,w15,w5); // 2.0u 0.25u
+ pmos #(142) pmos(Vosc,w16,w5); // 2.0u 0.25u
+ pmos #(107) pmos(w16,vdd,w9); // 2.0u 0.25u
+ pmos #(107) pmos(w17,vdd,w9); // 2.0u 0.25u
+ pmos #(121) pmos(w10,w17,Vosc); // 2.0u 0.25u
+ nmos #(121) nmos(w10,w18,Vosc); // 2.0u 0.25u
+ nmos #(107) nmos(w18,vss,Vc); // 2.0u 0.25u
+ pmos #(149) pmos(w9,vdd,w9); // 2.0u 0.25u
+ pmos #(107) pmos(w6,vdd,w9); // 2.0u 0.25u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 Vc=~Vc;
+
+// Simulation parameters
+// Vc CLK 10 10

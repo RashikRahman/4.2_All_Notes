@@ -1,0 +1,39 @@
+DSCH 2.7e
+VERSION 11/13/2003 9:31:52 AM
+BB(11,0,55,20)
+SYM  #inv
+BB(20,0,55,20)
+TITLE 35 10  #~
+MODEL 101
+PROP                                                                                                                                   
+REC(0,0,0,0, )
+VIS 0
+PIN(20,10,0.000,0.000)in
+PIN(55,10,0.030,0.000)out
+LIG(20,10,30,10)
+LIG(30,0,30,20)
+LIG(30,0,45,10)
+LIG(30,20,45,10)
+LIG(47,10,47,10)
+LIG(49,10,55,10)
+VLG  not not1(out,in);
+FSYM
+SYM  #button1
+BB(11,6,20,14)
+TITLE 15 10  #button
+MODEL 59
+PROP                                                                                                                                   
+REC(12,7,6,6,r)
+VIS 1
+PIN(20,10,0.000,0.000)in1
+LIG(19,10,20,10)
+LIG(11,14,11,6)
+LIG(19,14,11,14)
+LIG(19,6,19,14)
+LIG(11,6,19,6)
+LIG(12,13,12,7)
+LIG(18,13,12,13)
+LIG(18,7,18,13)
+LIG(12,7,18,7)
+FSYM
+FFIG example
