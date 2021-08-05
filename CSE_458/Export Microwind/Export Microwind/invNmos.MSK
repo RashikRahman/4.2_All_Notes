@@ -1,0 +1,58 @@
+VERSION 5/17/2003 4:16:12 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\invNmos.MSK
+BB(5,-11,41,71)
+SIMU #2.00
+REC(17,41,4,3,DN)
+REC(17,37,5,4,DN)
+REC(16,17,6,6,DN)
+REC(8,37,5,7,DN)
+REC(8,17,6,6,DN)
+REC(19,38,2,2,CO)
+REC(13,-10,2,2,CO)
+REC(19,20,2,2,CO)
+REC(14,58,2,2,CO)
+REC(14,58,2,2,CO)
+REC(9,39,2,2,CO)
+REC(9,18,2,2,CO)
+REC(13,34,4,27,PO)
+REC(14,14,2,12,PO)
+REC(12,-11,4,4,PO)
+REC(13,-7,3,21,PO)
+REC(8,37,4,20,ME)
+REC(5,-3,30,6,ME)
+REC(22,27,3,4,ME)
+REC(12,-11,4,4,ME)
+REC(5,57,30,6,ME)
+REC(21,-11,4,4,ME)
+REC(8,3,4,18,ME)
+REC(21,67,4,4,ME)
+REC(18,19,4,22,ME)
+REC(22,68,2,2,VI)
+REC(13,-1,2,2,VI)
+REC(22,28,2,2,VI)
+REC(14,58,2,2,VI)
+REC(22,-10,2,2,VI)
+REC(10,57,7,6,M2)
+REC(21,-11,4,82,M2)
+REC(11,-3,6,6,M2)
+REC(13,-1,2,2,V2)
+REC(14,58,2,2,V2)
+REC(5,56,30,7,M3)
+REC(5,-3,30,7,M3)
+REC(13,37,4,7,DN)
+REC(14,17,2,6,DN)
+TITLE 10 0  #vss
+$0 1000 0 
+TITLE 20 60  #vdd
+$1 1000 0 
+TITLE 24 70  #_invNmos
+$v 1000 0 
+TITLE 13 -10  #clock
+$c 1000 0 0.5000 0.5500 1.0500 1.1000 
+TITLE 5 20  #N1
+$- 1000 0 
+TITLE 6 42  #N2
+$- 1000 0 
+TITLE 41 -11  #BSIM4
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\invNmos.MSK

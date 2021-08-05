@@ -1,0 +1,24 @@
+VERSION 28/08/02 14:18:47
+FIG #C:\microwind2\Book on CMOS\FourierSources.MSK
+BB(-9,-23,45,43)
+SIMU #5.00
+REC(-9,38,54,5,ME)
+REC(-9,26,54,5,ME)
+REC(-9,13,54,5,ME)
+REC(-9,1,54,5,ME)
+REC(-9,-10,54,5,ME)
+REC(-9,-23,53,5,ME)
+HELP 
+TITLE -4 40  #square
+$c 1000 0   0.23   0.25   0.48   0.50 
+TITLE -4 28  #triangle
+$c 1000 0   0.90   0.95   0.95   1.00 
+TITLE -4 15  #sinus500MHz
+$s 417 417 500.00   0.00   0.00   0.00 
+TITLE -4 3  #sinus2GHz
+$s 417 417 2000.00   0.00   0.00   0.00 
+TITLE -4 -8  #sweep1-10GHz
+$s 417 417 1000.00   0.05   0.00   0.00 
+TITLE -5 -21  #Noisy2GHz
+$s 417 17 2000.00   0.00   0.20   0.00 
+FFIG C:\microwind2\Book on CMOS\FourierSources.MSK

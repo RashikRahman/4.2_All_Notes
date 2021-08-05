@@ -1,0 +1,43 @@
+VERSION 3/27/2003 4:47:58 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\lddExplain.MSK
+BB(-128,63,-44,98)
+SIMU #20.00
+REC(-108,74,26,24,OP,1)
+REC(-73,74,29,24,OP,0)
+REC(-57,81,6,10,DN)
+REC(-66,81,5,10,DN)
+REC(-94,81,5,10,DN)
+REC(-101,81,5,10,DN)
+REC(-121,81,5,10,DN)
+REC(-128,81,5,10,DN)
+REC(-92,82,2,2,CO)
+REC(-55,88,2,2,CO)
+REC(-92,88,2,2,CO)
+REC(-119,88,2,2,CO)
+REC(-127,82,2,2,CO)
+REC(-65,82,2,2,CO)
+REC(-65,88,2,2,CO)
+REC(-119,82,2,2,CO)
+REC(-55,82,2,2,CO)
+REC(-127,88,2,2,CO)
+REC(-100,88,2,2,CO)
+REC(-100,82,2,2,CO)
+REC(-61,78,4,16,PO)
+REC(-96,78,2,16,PO)
+REC(-123,78,2,16,PO)
+REC(-101,77,4,14,ME)
+REC(-128,77,4,14,ME)
+REC(-120,81,4,14,ME)
+REC(-93,81,4,14,ME)
+REC(-56,81,4,14,ME)
+REC(-66,77,4,14,ME)
+REC(-123,81,2,10,DN)
+REC(-96,81,2,10,DN)
+REC(-61,81,4,10,DN)
+TITLE -66 64  #High voltage
+$- 1000 0 
+TITLE -103 63  #High speed
+$- 1000 0 
+TITLE -125 64  #Low leakage
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\lddExplain.MSK

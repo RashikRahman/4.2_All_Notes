@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>crosstalk</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<META NAME="Date" CONTENT="11/28/96">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\HTML.DOT">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<B><I><FONT SIZE=5 COLOR="#000080"><P>Crosstalk </B></FONT><FONT COLOR="#000080">(Simulation Menu)</P>
+</I></FONT><P>Crosstalk is a parasitic effect that affects long lines routed close from each other. The proximity of the interconnects creates a coupling effect that provokes crosstalk between the affector and victims. By default, the analog simulator do not consider the crosstalk capacitance. </P>
+
+<UL>
+<LI>Use the command "Simulate" -&gt; "With crosstalk" to perform analog simulation including the crosstalk capacitance extraction and simulation. </LI>
+<LI>Click "Evaluate Min/max" to compute on the screen the maximum amplitude of the crosstalk</LI></UL>
+
+<P>There are three types of capacitance for interconnects: capacitance to substrate body, inter-layer capacitance and lateral crosstalk capacitance. The inter-layer capacitance refers vertical coupling between layers, while lateral crosstalk capacitance refer to adjacent interconnect coupling. The crosstalk capacitance value per unit length is given in the design rule file for a predefined interconnect width (w=4<FONT FACE="Symbol">l</FONT> ) and spacing (d=4<FONT FACE="Symbol">l</FONT> ). In Microwind, the computed crosstalk capacitance is not dependant on the interconnect width w. The computed crosstalk capacitance value is proportional to 1/d where d is the distance between interconnects.</P>
+<P>Example: The demonstration of crosstalk can be made with the circuit CrosstalkBig.MSK. The schematic diagram of the circuit corresponds to two strong inverters, and strongly coupled interconnects. We used one interconnect "victim" fixed to Vss, surrounded by two aggressors which are switching, to exhibit the crosstalk effect. </P>
+<P>[<A HREF="index.htm">Back</A>]</P></BODY>
+</HTML>

@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>simulate</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<META NAME="Date" CONTENT="11/28/96">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\HTML.DOT">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<B><I><FONT SIZE=5 COLOR="#000080"><P>Run Simulation </B></FONT><FONT COLOR="#000080">(Simulate Menu CTRL+S)</P>
+</I></FONT><P>The "Run Simulation" icon or the command <B>Simulate -&gt; Start Simulation</B> both give access to the automatic extraction and analog simulation of the layout.</P>
+
+<UL>
+<LI>Click on <B>Voltage vs Time</B> to obtain the transient analysis of all visible signals. The delay between the selected<B> start node</B> and selected <B>stop node</B> is computed at VDD/2. You can change the selected <B>start node</B> in the node list, in the right upper menu of the window. You can do the same for the selected <B>stop node</B>.</LI>
+<LI>Click on <B>Voltage and Currents </B>so as to make all voltage curves appear in the lower window, and the VDD, the VSS and the desired MOS currents appear in the upper window.  In that mode, the dissipated power within the simulation is also displayed.</LI>
+<P ALIGN="JUSTIFY"><LI>Click on <B>Voltage vs. Voltage</B> to obtain transfer characteristics between the X-axis selected node and the Y-axis selected node. Initially the start node is the first clock or pulse of the node list, and the stop node is the first varying node. This mode is useful for the computing of the Inverter characteristics (commutation point), the DC response of the operational amplifier, or for the Schmitt trigger to see the hysteresis phenomenon. The first simulation computes the value of the <B>stop node</B> for <B>start node</B> varying from 0 to VDD. The second click on &quot;&nbsp;Simulate&nbsp;&quot; computes the same for <B>start node</B> varying from VDD to 0.</LI></P>
+<P ALIGN="JUSTIFY"><LI>Click on <B>Frequency &amp; Voltages </B>so as to make all voltage curves appear in the lower window, and to plot the variation of the switching frequency of one selected signal. This mode is very useful for monitoring the output signal of oscillators. </LI></P></UL>
+
+<I><P ALIGN="JUSTIFY">NOTE&nbsp;: </I>You can modify the minimum simulation step <FONT FACE="Symbol">&#68;</FONT>
+t, but it may be dangerous. If you increase <FONT FACE="Symbol">&#68;</FONT>
+t the simulation speed improves but the numerical error may lead to unstable simulations. If you decrease <FONT FACE="Symbol">&#68;</FONT>
+t, the simulation speed is decreased too but the numerical precision is improved. The risk of computing divergence is reduced.</P>
+<P> [<A HREF="index.htm">Back</A>]</P></BODY>
+</HTML>

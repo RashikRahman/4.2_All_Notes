@@ -1,0 +1,76 @@
+VERSION 5/6/2003 5:45:36 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\Eeprom.MSK
+BB(-2,-6,58,57)
+SIMU #500.00
+REC(51,21,4,5,DN)
+REC(51,16,4,3,DN)
+REC(51,9,4,5,DN)
+REC(20,49,4,5,DN)
+REC(20,42,4,5,DN)
+REC(12,20,4,5,DN)
+REC(12,8,4,10,DN)
+REC(12,1,4,5,DN)
+REC(51,19,4,2,DN)
+REC(51,14,4,2,DN)
+REC(20,47,4,2,DN)
+REC(12,18,4,2,DN)
+REC(12,6,4,2,DN)
+REC(21,43,2,2,CO)
+REC(13,47,2,2,CO)
+REC(52,10,2,2,CO)
+REC(13,22,2,2,CO)
+REC(13,2,2,2,CO)
+REC(52,23,2,2,CO)
+REC(21,51,2,2,CO)
+REC(24,18,4,2,P2,0)
+REC(2,18,6,2,P2,0)
+REC(8,18,11,2,P2,0)
+REC(16,47,12,2,P2,0)
+REC(16,47,11,2,P2,0)
+REC(12,46,4,4,P2,0)
+REC(8,18,16,2,P2,0)
+REC(48,19,10,2,P2,0)
+REC(48,14,10,2,PO)
+REC(9,18,10,2,PO)
+REC(9,6,10,2,PO)
+REC(17,47,10,2,PO)
+REC(49,19,8,2,PO)
+REC(20,50,4,7,ME)
+REC(-2,46,18,4,ME)
+REC(3,21,27,4,ME)
+REC(20,39,4,7,ME)
+REC(12,1,16,4,ME)
+REC(51,9,4,4,ME)
+REC(48,22,10,4,ME)
+REC(21,2,2,2,VI)
+REC(52,10,2,2,VI)
+REC(52,10,2,2,VI)
+REC(51,6,4,22,M2)
+REC(20,-6,4,36,M2)
+TITLE 4 19  #Sel Memory Gate
+$- 1000 0 
+TITLE 23 3  #BitLine
+$- 1000 0 
+TITLE 5 23  #Array Vss
+$0 1000 0 
+TITLE 0 48  #Poly2 gate
+$- 1000 0 
+TITLE 22 40  #Source
+$- 1000 0 
+TITLE 22 56  #Drain
+$- 1000 0 
+TITLE 10 7  #Word Line
+$- 1000 0 
+TITLE 44 2  #Compact EEPROM cell
+$- 1000 0 
+TITLE 49 23  #Array Vss
+$0 1000 0 
+TITLE 48 19  #Sel
+$- 1000 0 
+TITLE 49 15  #WL
+$- 1000 0 
+TITLE 53 7  #BL
+$- 1000 0 
+TITLE 3 55  #Double gate MOS
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\Eeprom.MSK

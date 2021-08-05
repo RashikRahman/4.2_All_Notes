@@ -1,0 +1,43 @@
+VERSION 2/2/2003 6:14:22 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\SupplyDesign.MSK
+BB(-57,-20,180,44)
+SIMU #5.00
+REC(33,4,56,31,M5)
+REC(-57,4,56,31,M5)
+REC(124,3,56,31,M5)
+REC(137,27,5,5,V5)
+REC(157,27,5,5,V5)
+REC(147,17,5,5,V5)
+REC(167,27,5,5,V5)
+REC(157,17,5,5,V5)
+REC(-34,28,5,5,V5)
+REC(-14,28,5,5,V5)
+REC(167,17,5,5,V5)
+REC(137,17,5,5,V5)
+REC(76,18,5,5,V5)
+REC(46,18,5,5,V5)
+REC(46,7,5,5,V5)
+REC(66,7,5,5,V5)
+REC(-24,28,5,5,V5)
+REC(137,6,5,5,V5)
+REC(76,7,5,5,V5)
+REC(56,7,5,5,V5)
+REC(46,28,5,5,V5)
+REC(66,28,5,5,V5)
+REC(76,28,5,5,V5)
+REC(56,28,5,5,V5)
+REC(-44,28,5,5,V5)
+REC(157,6,5,5,V5)
+REC(167,6,5,5,V5)
+REC(147,6,5,5,V5)
+REC(147,27,5,5,V5)
+REC(-46,-6,40,50,M6)
+REC(135,-7,40,50,M6)
+REC(44,-6,40,50,M6)
+TITLE -54 -18  #(a) Unreliable design
+$- 1000 0 
+TITLE 28 -20  #(b) Correct design
+$- 1000 0 
+TITLE 125 -20  #(c) Best design
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\SupplyDesign.MSK

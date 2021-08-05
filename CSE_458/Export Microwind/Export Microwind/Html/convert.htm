@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>convert</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<META NAME="Date" CONTENT="11/28/96">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\HTML.DOT">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<B><I><FONT SIZE=5 COLOR="#000080"><P>Convert into </B></FONT><FONT COLOR="#000080">(File Menu)</P>
+</I></FONT><P>MICROWIND2 converts the layout data into CIF using a specific interface, invoked by "<B>File -&gt; Convert Into -&gt; CIF layout file</B>". The CIF file can be exported to VLSI CAD software. The right table of the screen gives the correspondence between MICROWIND2 layers and CIF layers, the number of boxes in the layout and the corresponding over-etch. The overetch is used to modify the final size of the CIF boxes in order to fit the exact design rules.</P>
+
+<UL>
+<P ALIGN="JUSTIFY"><LI>Click on "&nbsp;<B>Convert to CIF</B>&nbsp;" to start conversion. Some parts of the result appear in the left window</LI></P>
+<P ALIGN="JUSTIFY"><LI>The main unit is 1nm. You may change it to fit the requirements of the target CAD tool.</LI></P>
+<P ALIGN="JUSTIFY"><LI>For CMOS 0.25µm rule file (cmos025.RUL), notice the overetch applied to contact and via. This overetch is mandatory to obey the final design rules, while keeping the user-friendly and portable lambda-based design.</LI></P></UL>
+
+<P>MICROWIND2 can also convert the layout data into a SPICE netlist using the command "<B>File -&gt; Convert Into -&gt; SPICE netlist</B>". Your design is then translated into a SPICE compatible description. The circuit extractor included in the software generates the equivalent circuit diagram of the layout and a spice compatible netlist ready to be simulated. You may select the model you will be using for simulation. The choice lies between model 1, model 3 and model 9.</P>
+
+<UL>
+<LI>The SPICE description includes the list of n-channel and p-channel transistors and their associated width &amp; length<I> </I>extracted from the layout. </LI>
+<LI>The text file also details the node names, parasitic capacitances, and device models.</LI>
+<LI>The SPICE filename corresponds to the current filename with the appendix <B>.CIR</LI></UL>
+
+</B><P ALIGN="JUSTIFY">[<A HREF="index.htm">Back</A>]</P></BODY>
+</HTML>

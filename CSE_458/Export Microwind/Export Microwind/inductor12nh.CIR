@@ -1,0 +1,23 @@
+CIRCUIT C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\inductor12nh.MSK
+*
+* IC Technology: CMOS 0.12µm - 6 Metal
+*
+VDD 1 0 DC 1.20
+*
+* List of nodes
+* "N2" corresponds to n°2
+* "sinus1" corresponds to n°3
+* "s1" corresponds to n°4
+*
+* MOS devices
+*
+C2 2 0 4596.202fF
+C3 3 0 6141.428fF
+C4 4 0 804.660fF
+*
+* Extra RLC
+*
+Ladd1 2 4 10nH
+Radd2 3 2 10
+Cadd3 4 0 5pF
+*

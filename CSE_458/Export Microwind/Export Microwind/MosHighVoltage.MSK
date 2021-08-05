@@ -1,0 +1,61 @@
+VERSION 3/27/2003 3:53:01 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\MosHighVoltage.MSK
+BB(-28,4,62,52)
+SIMU #10.00
+REC(33,22,29,30,OP,2)
+REC(-28,19,16,17,OP,0)
+REC(48,27,5,20,DN)
+REC(39,27,5,20,DN)
+REC(15,23,5,4,DN)
+REC(8,23,5,4,DN)
+REC(-19,23,5,4,DN)
+REC(-26,23,5,4,DN)
+REC(40,29,2,2,CO)
+REC(-17,24,2,2,CO)
+REC(9,24,2,2,CO)
+REC(-25,24,2,2,CO)
+REC(50,29,2,2,CO)
+REC(50,36,2,2,CO)
+REC(-21,31,2,2,CO)
+REC(50,43,2,2,CO)
+REC(40,36,2,2,CO)
+REC(17,24,2,2,CO)
+REC(40,43,2,2,CO)
+REC(13,31,2,2,CO)
+REC(13,20,2,10,PO)
+REC(-21,20,2,10,PO)
+REC(12,30,4,4,PO)
+REC(-22,30,4,4,PO)
+REC(44,24,4,26,PO)
+REC(39,24,4,23,ME)
+REC(8,23,4,4,ME)
+REC(-22,30,4,4,ME)
+REC(12,30,4,4,ME)
+REC(-18,23,4,4,ME)
+REC(16,23,4,4,ME)
+REC(49,27,4,23,ME)
+REC(-26,23,4,4,ME)
+REC(-21,23,2,4,DN)
+REC(13,23,2,4,DN)
+REC(44,27,4,20,DN)
+TITLE 39 12  #thick gate oxide (7nm)
+$- 1000 0 
+TITLE 7 16  #low leakage MOS 
+$- 1000 0 
+TITLE 39 16  #high voltage MOS 
+$- 1000 0 
+TITLE 7 12  #thin gate oxide (2nm)
+$- 1000 0 
+TITLE -28 17  #high speed MOS 
+$- 1000 0 
+TITLE -28 13  #thin gate oxide (2nm)
+$- 1000 0 
+TITLE 39 8  #Up to 2.5V
+$- 1000 0 
+TITLE 7 7  #Up to 1.2V
+$- 1000 0 
+TITLE -28 8  #Up to 1.2V
+$- 1000 0 
+TITLE 39 4  #Large channel length
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\MosHighVoltage.MSK

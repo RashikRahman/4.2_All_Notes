@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>virtual</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<META NAME="Date" CONTENT="11/28/96">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\HTML.DOT">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<B><I><FONT SIZE=5 COLOR="#000080"><P>Virtual R,L,C </B></FONT><FONT COLOR="#000080">(Edit Menu)</P>
+</I></FONT><P>Three virtual elements may be added to the layout: resistance, capacitance and inductance. </P>
+<P>RESISTANCE. Adding a resistance in the layout is interesting to handle the interconnect resistance effect in analog simulation. In practice, resistance are added in the layout of some analog circuits such as analog-to-digital converters (See ADC.MSK). To insert a resistance, do as follows:</P>
+<OL>
+
+<LI>Delete a thin portion of the metal or poly interconnect in order to create two separate layers.</LI>
+<LI>Click the resistance symbol in the palette or invoke "Edit -&gt; Virtual RLC -&gt; Resistance"</LI>
+<LI>Insert the resistance in order to make the electrical bridge between the two nodes.</LI></OL>
+
+<P>When adding a resistance, you give:</P>
+
+<UL>
+<LI>Either a fixed value (For example 1200)</LI>
+<LI>Either a keyword: R(poly),R(metal), or R(All). In that case, at extraction, Microwind updates the value of the resistance according to the layout and current technology.</LI></UL>
+
+<P>CAPACITANCE. Adding a virtual capacitance is interesting to investigate the behavior of a circuit when loaded by a capacitance charge, without performing its implementation. </P>
+<P>INDUCTANCE. An inductance may be added in the layout to simulate the effect of integrated inductance, in resonant circuits for example.</P>
+<P>[<A HREF="index.htm">Back</A>]</P></BODY>
+</HTML>

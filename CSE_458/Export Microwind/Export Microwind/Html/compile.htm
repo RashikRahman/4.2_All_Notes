@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>compile</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<META NAME="Date" CONTENT="11/28/96">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\HTML.DOT">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<B><I><FONT SIZE=5 COLOR="#000080"><P>Compile one line </B></FONT><FONT COLOR="#000080">(Compile -&gt; Compile one line)</P>
+</I></FONT><P>The cell compiler is a specific tool designed for the automatic creation of CMOS cells from logic description. Click on <B>Compile</B> -&gt; <B>Compile One Line</B>. The menu below appears<B>.</B> The default equation corresponds to a 3 input NOR gate. If needed, one can use the keyboard in order to modify the equation and then click on <B>Compile</B>. The gate is compiled and its corresponding layout is generated.</P>
+<P>The first item of the one-line syntax corresponds to the output name. </P>
+<P>The letter is followed by the sign "&nbsp;=&nbsp;", the optional sign not "&nbsp;~&nbsp;", and by the list of input names separated by the operators AND "&nbsp;&amp;&nbsp;" or OR "&nbsp;|&nbsp;". If need be, parenthesis can be added. </P>
+<P>The input and output names are 8 character strings maximum.</P>
+<P ALIGN="CENTER"><CENTER><TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=453>
+<TR><TD WIDTH="27%" VALIGN="TOP">
+<P><B>Cell</B></TD>
+<TD WIDTH="73%" VALIGN="TOP">
+<B><P>Formula</B></TD>
+</TR>
+<TR><TD WIDTH="27%" VALIGN="TOP">
+<P>Inverter</TD>
+<TD WIDTH="73%" VALIGN="TOP">
+<FONT FACE="Courier New"><P>out=~in</FONT></TD>
+</TR>
+<TR><TD WIDTH="27%" VALIGN="TOP">
+<P>NAND gate</TD>
+<TD WIDTH="73%" VALIGN="TOP">
+<FONT FACE="Courier New"><P>n=~(a&amp;b)</FONT></TD>
+</TR>
+<TR><TD WIDTH="27%" VALIGN="TOP">
+<P>3 Input OR</TD>
+<TD WIDTH="73%" VALIGN="TOP">
+<FONT FACE="Courier New"><P>s=a|b|c</FONT></TD>
+</TR>
+<TR><TD WIDTH="27%" VALIGN="TOP">
+<P>3 Input NAND</TD>
+<TD WIDTH="73%" VALIGN="TOP">
+<FONT FACE="Courier New"><P>out=~(a&amp;b&amp;c)</FONT></TD>
+</TR>
+<TR><TD WIDTH="27%" VALIGN="TOP">
+<P>AND-OR Gate</TD>
+<TD WIDTH="73%" VALIGN="TOP">
+<FONT FACE="Courier New"><P>cgate=a&amp;(b|c)</FONT></TD>
+</TR>
+<TR><TD WIDTH="27%" VALIGN="TOP">
+<P>CARRY Cell</TD>
+<TD WIDTH="73%" VALIGN="TOP">
+<FONT FACE="Courier New"><P>cout=(a&amp;b)|(cin&amp;(a|b))</FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P>TRANSISTOR SIZE. The default device size is given by the design rules. You may change the nMOS and pMOS width in the option menu before clicking on PILE.</P>
+<P>IMPLEMENTATION. The p-channel transistors are located on the top of the n-channel transistor net. If some layout already exists near those icons, the cell origin is moved to the right until enough free space is found. If the '~' NOT operator has not been specified after the '=' sign, an inverter is added at the right hand side of the compiled cell. That is why an AND gate is compiled as a NAND gate followed by an inverter.</P>
+<P>[<A HREF="index.htm">Back</A>]</P></BODY>
+</HTML>

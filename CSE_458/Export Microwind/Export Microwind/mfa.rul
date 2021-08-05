@@ -1,0 +1,199 @@
+MICROWIND 2.0
+*
+* Rule file for CMOS 6.0 µm
+*
+NAME CMOS 6.0µm CMOS
+*
+lambda = 3.0
+metallayers =1
+ldd = 0          (no ldd)
+*
+* Design rules associated to each layer
+*
+r101 = 46     { well }
+r102 = 46
+*
+r201 = 15     { diffusion }
+r202 = 9
+r203 = 12
+r204 = 12
+*
+r301 = 6     { poly }
+r302 = 6
+r304 = 3
+r305 = 3
+r306 = 12
+r307 = 6
+*
+r401 = 6       { contact }
+r402 = 12
+r403 = 3
+r404 = 3
+r405 = 3
+r406 = 6      { contact to gate }
+*
+r501 = 4      { metal }
+r502 = 3
+*
+r601 = 6     { via }
+r602 = 9
+r603 = 9
+r604 = 6
+r605 = 6    { via to poly }
+*
+r701 = 12      { metal 2 }  might be it to eliminate? 
+r702 = 3        We don't want to prepare metal 2!
+*
+* Pads
+*
+rp01 = 167    { pad size  }
+rp02 = 167    { pad spacing }
+rp03 = 7      { pad border to via }
+rp04 = 12     { pad border to opening passiv }
+rp05 = 35     { pad to next active area }
+rp06 = 75     { test pad 30 æm for probing }
+*
+*
+*
+* Thickness of layers 
+*
+thpoly = 0.5
+hepoly = 0.4
+thme = 0.8
+heme = 1.2
+thm2 = 1.1
+hem2 = 2.5
+thpass = 1.0
+hepass = 4.0
+thnit = 0.5
+henit = 5.0
+*
+* Resistance (ohm / square)
+*
+repo = 10
+reme = 0.05
+rem2 = 0.05
+*
+* Parasitic capacitances
+*
+cpoOxyde = 1600   (all in aF/µm2)
+cpobody = 63
+cmebody = 29
+cmepoly = 53
+cmelineic = 44   (aF/µm)
+cm2body = 16
+cm2lineic = 42  (aF/µm)
+cm2metal = 35
+cdnpwell = 360
+cdpnwell = 340
+cldn = 350      (aF/µm)
+cldp = 220
+*
+* Crosstalk
+*
+cmextk = 10      (Lineic capacitance for crosstalk coupling in aF/µm)
+cm2xtk = 10      (C is computed using Cx=cmextk*l/spacing)
+*
+*
+* Nmos Model level 3
+*
+NMOS
+l3u0 = 0.06
+l3tox = 80e-9
+l3vto = 0.70    Vtn in Volt
+l3ld = -0.08
+l3theta = 0.1
+l3gamma = 0.4
+l3phi = 0.30
+l3kappa = 0.01
+l3vmax = 150e3
+l3nss = 0.070
+*
+* Pmos Model level 3
+*
+PMOS
+l3u0 = 0.02
+l3tox = 80e-9
+l3vto = -0.76
+l3ld  = -0.03
+l3theta = 0.1
+l3gamma = 0.4
+l3phi = 0.70
+l3kappa = 0.03
+l3vmax = 70e3
+l3nss = 0.060
+*
+* BSIM4 parameters
+* Nmos
+*
+NMOS
+b4vtho = 0.7
+b4k1 = 0.2
+b4k2 = 0.1
+b4xj = 1.7e-7
+b4toxe = 80e-9
+b4ndep = 1.8e17
+b4d0vt = 2.3
+b4d1vt = 0.54
+b4vfb = -0.9
+b4u0 = 0.058
+b4ua = 1e-15
+b4uc = -0.047e-15
+b4vsat = 100e3
+b4pscbe1 =230e6
+b4ute = -1.8
+b4kt1 = -0.06
+b4lint = 0.01e-6
+b4wint = 0.02e-6
+b4xj = 1.5e-7
+b4ndep = 1.7e17
+b4pclm = 1.1
+*
+* Pmos BSIM4
+*
+PMOS
+b4vtho = 0.8
+b4k1 = 0.2
+b4k2 = 0.1
+b4xj = 1.7e-7
+b4toxe = 80e-9
+b4ndep = 1.8e17
+b4d0vt = 2.3
+b4d1vt = 0.54
+b4vfb = -0.9
+b4u0 = 0.02
+b4ua = 1e-15
+b4uc = -0.047e-15
+b4vsat = 60e3
+b4pscbe1 =230e6
+b4ute = -1.8
+b4kt1 = -0.06
+b4lint = 0.01e-6
+b4wint = 0.02e-6
+b4xj = 1.5e-7
+b4ndep = 1.7e17
+b4pclm = 0.7
+*
+* CIF
+* MicroWind name, Cif name, overetch for final translation
+*
+cif nwell NTUB 0.0
+cif aarea AAREA  0.0
+cif poly POLY  0.0
+cif diffn ARSENIC  0.4
+cif diffp BORON  0.4
+cif contact CONTACT 0.2
+cif metal METAL1  0.0
+cif via VIA 0.1
+cif metal2 METAL2 0.0
+cif passiv PAD  0.0
+cif text text 0.0
+*
+* Simulation parameters
+*
+deltaT = 3e-12   (Minimum simulation interval dT)
+vdd = 5.0
+temperature = 27
+*
+* End CMOS 6.0 µm
+*

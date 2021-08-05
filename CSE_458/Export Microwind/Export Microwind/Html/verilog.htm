@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>verilog</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<META NAME="Date" CONTENT="11/28/96">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\HTML.DOT">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<B><I><FONT SIZE=5 COLOR="#000080"><P>Compile Verilog </B></FONT><FONT COLOR="#000080">(Compile -&gt; Compile VERILOG file)</P>
+</I></FONT><P>The cell compiler can handle layout generation from a primitive-based VERILOG description text into a layout form automatically. Click on <B>Compile</B> -&gt; <B>Compile Verilog File</B>. Select a VERILOG text file and click on "Generate". The list of primitives is given below.</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=673>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P><B>PRIMITIVE</B></TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<B><P>NODES</B></TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<B><P>EXAMPLE</B></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>dreg</TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<P>Inputs : Data,RESET, CLOCK</P>
+<P>Outputs: Q, nQ</TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<P>dreg reg1(d,rst,h,q,nq);</TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Inv, not</TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<P>Inputs : IN</P>
+<P>Outputs: OUT</TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<P>inv inv1(s,e); // both ‘inv’ and ‘not’</P>
+<P>not inv1(s,e); // can be used</TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>and</TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<P>Inputs : 2 to 4</P>
+<P>Outputs: S</TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<P>and and1(s,a,b,c,d); // limit inputs to 4</TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>nand</TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<P>Inputs : 2 to 4</P>
+<P>Outputs: S</TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<P>nand nand1(s,a,b,c,d); </TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>or</TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<P>Inputs : 2 to 4</P>
+<P>Outputs: S</TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<P>or or3(s,a,b,c); </TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>nor</TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<P>Inputs : 2 to 4</P>
+<P>Outputs: S</TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<P>nor my_nor4(s,a,b,c,d); </TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>xor</TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<P>Inputs : a,b</P>
+<P>Outputs: S</TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<P>xor xor_gate(xor_out,d0,d1); </TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Nmos</TD>
+<TD WIDTH="31%" VALIGN="TOP">
+<P>Inputs: gate, source</P>
+<P>Outputs: drain</TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<P>nmos nmos1(d,s,g);</TD>
+</TR>
+</TABLE>
+
+<P>[<A HREF="index.htm">Back</A>]</P></BODY>
+</HTML>

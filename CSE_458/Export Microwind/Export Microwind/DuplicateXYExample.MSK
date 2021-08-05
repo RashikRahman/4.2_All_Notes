@@ -1,0 +1,82 @@
+VERSION 2/20/2003 10:17:48 AM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\DuplicateXYExample.MSK
+BB(213,-77,307,-11)
+SIMU #5.00
+REC(298,-45,4,8,ME)
+REC(298,-21,4,8,ME)
+REC(298,-53,4,8,ME)
+REC(298,-61,4,8,ME)
+REC(298,-29,4,8,ME)
+REC(298,-69,4,8,ME)
+REC(298,-77,4,8,ME)
+REC(290,-21,4,8,ME)
+REC(290,-29,4,8,ME)
+REC(290,-37,4,8,ME)
+REC(290,-45,4,8,ME)
+REC(290,-53,4,8,ME)
+REC(290,-61,4,8,ME)
+REC(222,-57,4,8,ME)
+REC(290,-69,4,8,ME)
+REC(290,-77,4,8,ME)
+REC(282,-21,4,8,ME)
+REC(282,-29,4,8,ME)
+REC(282,-37,4,8,ME)
+REC(282,-45,4,8,ME)
+REC(282,-53,4,8,ME)
+REC(282,-61,4,8,ME)
+REC(282,-69,4,8,ME)
+REC(282,-77,4,8,ME)
+REC(298,-37,4,8,ME)
+REC(299,-42,2,2,VI)
+REC(299,-58,2,2,VI)
+REC(299,-74,2,2,VI)
+REC(291,-34,2,2,VI)
+REC(291,-42,2,2,VI)
+REC(291,-66,2,2,VI)
+REC(291,-74,2,2,VI)
+REC(283,-50,2,2,VI)
+REC(283,-58,2,2,VI)
+REC(283,-66,2,2,VI)
+REC(283,-74,2,2,VI)
+REC(223,-54,2,2,VI)
+REC(299,-26,2,2,VI)
+REC(296,-35,8,4,M2)
+REC(296,-43,8,4,M2)
+REC(296,-51,8,4,M2)
+REC(296,-59,8,4,M2)
+REC(296,-67,8,4,M2)
+REC(296,-75,8,4,M2)
+REC(288,-19,8,4,M2)
+REC(288,-27,8,4,M2)
+REC(288,-35,8,4,M2)
+REC(288,-43,8,4,M2)
+REC(288,-51,8,4,M2)
+REC(288,-59,8,4,M2)
+REC(288,-67,8,4,M2)
+REC(288,-75,8,4,M2)
+REC(280,-19,8,4,M2)
+REC(280,-27,8,4,M2)
+REC(280,-35,8,4,M2)
+REC(280,-43,8,4,M2)
+REC(280,-51,8,4,M2)
+REC(280,-59,8,4,M2)
+REC(280,-67,8,4,M2)
+REC(280,-75,8,4,M2)
+REC(296,-27,8,4,M2)
+REC(296,-19,8,4,M2)
+REC(220,-55,8,4,M2)
+TITLE 214 -44  #Cell used for duplicating in X,Y
+$- 1000 0 
+TITLE 214 -64  #The metal/metal2 via is programmed 
+$- 1000 0 
+TITLE 213 -70  #with 0,1,2,3,4,5,6,7 data
+$- 1000 0 
+TITLE 266 -11  #Duplicating result
+$- 1000 0 
+TITLE 307 -17  #0=no via
+$- 1000 0 
+TITLE 307 -73  #7=111=three vias
+$- 1000 0 
+TITLE 307 -49  #4=100=one via at left
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\DuplicateXYExample.MSK

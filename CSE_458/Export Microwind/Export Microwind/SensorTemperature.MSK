@@ -1,0 +1,38 @@
+VERSION 6/17/2003 11:19:50 AM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\SensorTemperature.MSK
+BB(48,73,101,151)
+SIMU #50.00
+REC(56,89,23,22,OP,32)
+REC(52,128,46,23,NW)
+REC(48,81,40,35,NW)
+REC(85,134,5,4,DP)
+REC(60,134,5,4,DP)
+REC(58,91,19,18,DP)
+REC(86,144,4,4,DN)
+REC(50,83,4,4,DN)
+REC(87,145,2,2,CO)
+REC(61,135,2,2,CO)
+REC(87,135,2,2,CO)
+REC(66,99,2,2,CO)
+REC(51,84,2,2,CO)
+REC(66,128,2,2,CO)
+REC(65,127,4,4,PO)
+REC(65,131,20,10,PO)
+REC(69,113,32,4,ME)
+REC(65,98,4,29,ME)
+REC(86,138,6,6,ME)
+REC(60,127,9,4,ME)
+REC(86,134,4,4,ME)
+REC(50,73,4,14,ME)
+REC(86,144,4,4,ME)
+REC(60,131,4,7,ME)
+REC(65,134,20,4,DP)
+TITLE 88 142  #Vdd
+$1 1000 0 
+TITLE 63 73  #BSIM4
+$- 1000 0 
+TITLE 97 115  #Vref
+$v 1000 0 
+TITLE 52 75  #Vss
+$0 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\SensorTemperature.MSK

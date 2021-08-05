@@ -1,0 +1,89 @@
+VERSION 1/10/2003 10:48:09 AM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\LatchupProtect.MSK
+BB(41,-19,92,57)
+SIMU #1.00
+REC(44,38,24,16,NW)
+REC(41,-19,26,16,NW)
+REC(42,8,26,16,NW)
+REC(88,-13,4,4,ME)
+REC(56,-13,5,4,DP)
+REC(57,44,5,4,DP)
+REC(48,14,2,4,DP)
+REC(49,-13,5,4,DP)
+REC(50,44,5,4,DP)
+REC(55,14,2,4,DP)
+REC(50,14,5,4,DP)
+REC(55,44,2,4,DP)
+REC(54,-13,2,4,DP)
+REC(47,-13,2,4,DP)
+REC(57,14,5,4,DP)
+REC(81,14,5,4,DN)
+REC(43,-13,4,4,DN)
+REC(79,14,2,4,DN)
+REC(74,14,5,4,DN)
+REC(79,44,2,4,DN)
+REC(86,-13,2,4,ME)
+REC(74,-16,4,7,ME)
+REC(81,44,5,4,DN)
+REC(74,44,5,4,DN)
+REC(82,-13,4,7,ME)
+REC(79,-16,2,10,PO)
+REC(44,14,4,4,DN)
+REC(83,45,2,2,CO)
+REC(58,-12,2,2,CO)
+REC(75,-12,2,2,CO)
+REC(75,15,2,2,CO)
+REC(83,15,2,2,CO)
+REC(51,15,2,2,CO)
+REC(45,15,2,2,CO)
+REC(44,-12,2,2,CO)
+REC(83,-12,2,2,CO)
+REC(51,45,2,2,CO)
+REC(59,45,2,2,CO)
+REC(75,45,2,2,CO)
+REC(50,-12,2,2,CO)
+REC(89,-12,2,2,CO)
+REC(59,15,2,2,CO)
+REC(55,41,2,13,PO)
+REC(79,41,2,10,PO)
+REC(86,-13,2,4,DN)
+REC(54,-16,2,13,PO)
+REC(79,11,2,10,PO)
+REC(55,11,2,13,PO)
+REC(50,14,4,10,ME)
+REC(74,41,4,7,ME)
+REC(57,-17,4,8,ME)
+REC(43,-13,4,4,ME)
+REC(74,-13,5,4,DN)
+REC(49,-13,4,10,ME)
+REC(81,-13,5,4,DN)
+REC(48,14,2,4,ME)
+REC(47,-13,2,4,ME)
+REC(79,-13,2,4,DN)
+REC(82,44,4,7,ME)
+REC(88,-13,4,4,DP)
+REC(44,14,4,4,ME)
+REC(50,44,4,10,ME)
+REC(58,10,4,8,ME)
+REC(58,40,4,8,ME)
+REC(82,14,4,7,ME)
+REC(74,11,4,7,ME)
+TITLE 46 57  #Very probable Latch-up
+$- 1000 0 
+TITLE 45 28  #Latch-up limited by an n-well polarization
+$- 1000 0 
+TITLE 45 0  #Latch-up almost elimited by VDD and VSS polarization
+$- 1000 0 
+TITLE 84 50  #Vss
+$0 1000 0 
+TITLE 52 52  #Vdd
+$1 1000 0 
+TITLE 51 23  #Vdd
+$1 1000 0 
+TITLE 84 20  #Vss
+$0 1000 0 
+TITLE 85 -7  #Vss
+$0 1000 0 
+TITLE 51 -5  #Vdd
+$1 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\LatchupProtect.MSK

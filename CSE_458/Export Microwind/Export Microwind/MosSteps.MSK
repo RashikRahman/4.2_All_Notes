@@ -1,0 +1,107 @@
+VERSION 23/08/01 17:24:27
+FIG #C:\microwind2\Book on CMOS\MosSteps.MSK
+BB(-142,16,147,105)
+SIMU #5.00
+REC(75,58,34,30,NW)
+REC(25,17,37,30,NW)
+REC(-21,17,35,30,NW)
+REC(75,16,37,30,NW)
+REC(90,64,7,17,DP)
+REC(90,23,7,16,DP)
+REC(81,64,7,17,DP)
+REC(81,23,7,16,DP)
+REC(43,62,7,17,DP)
+REC(40,24,7,16,DP)
+REC(34,62,7,17,DP)
+REC(31,24,7,16,DP)
+REC(-6,24,7,16,DP)
+REC(-15,24,7,16,DP)
+REC(104,30,6,6,DN)
+REC(54,31,6,6,DN)
+REC(-87,64,7,16,DN)
+REC(-87,38,7,16,DN)
+REC(-96,64,7,16,DN)
+REC(-96,38,7,16,DN)
+REC(-129,37,7,16,DN)
+REC(-138,37,7,16,DN)
+REC(83,31,2,2,CO)
+REC(93,31,2,2,CO)
+REC(43,32,2,2,CO)
+REC(-3,32,2,2,CO)
+REC(33,32,2,2,CO)
+REC(56,33,2,2,CO)
+REC(-13,32,2,2,CO)
+REC(-94,46,2,2,CO)
+REC(-84,46,2,2,CO)
+REC(-126,45,2,2,CO)
+REC(-136,45,2,2,CO)
+REC(106,32,2,2,CO)
+REC(-131,60,2,22,PO)
+REC(88,61,2,22,PO)
+REC(38,21,2,22,PO)
+REC(88,20,2,22,PO)
+REC(-89,61,2,22,PO)
+REC(-89,35,2,22,PO)
+REC(-131,34,2,22,PO)
+REC(-8,21,2,22,PO)
+REC(41,59,2,22,PO)
+REC(-8,60,2,22,PO)
+REC(54,31,6,6,ME)
+REC(-138,43,6,6,ME)
+REC(104,30,6,6,ME)
+REC(-86,44,6,6,ME)
+REC(-15,30,6,6,ME)
+REC(41,30,6,6,ME)
+REC(31,30,6,6,ME)
+REC(81,29,6,6,ME)
+REC(91,29,6,6,ME)
+REC(-96,44,6,6,ME)
+REC(-5,30,6,6,ME)
+REC(-128,43,6,6,ME)
+REC(88,64,2,17,DP)
+REC(88,23,2,16,DP)
+REC(41,62,2,17,DP)
+REC(-8,24,2,16,DP)
+REC(38,24,2,16,DP)
+REC(-89,64,2,16,DN)
+REC(-89,38,2,16,DN)
+REC(-131,37,2,16,DN)
+TITLE -14 50  #(4) Add contacts
+$- 1000 0 
+TITLE 37 83  #(2) Add N+ diffusion
+$- 1000 0 
+TITLE 84 85  #(3) Add Nwell, with space for polarization
+$- 1000 0 
+TITLE -13 84  #(1) Draw the gate
+$- 1000 0 
+TITLE 5 94  #p-channel MOS design
+$- 1000 0 
+TITLE -118 95  #n-channel MOS design
+$- 1000 0 
+TITLE -142 58  #(3) Add contacts on drain and source regions
+$- 1000 0 
+TITLE -83 48  #Vout
+$- 1000 0 
+TITLE -95 52  #Vdrain
+$C 1000 0   0.45   0.50   0.95   1.00 
+TITLE -136 84  #(1) Draw the gate
+$- 1000 0 
+TITLE -88 56  #Vgate
+$C 1000 0   0.95   1.00   1.95   2.00 
+TITLE -93 85  #(2) Add N+ diffusion
+$- 1000 0 
+TITLE -91 59  #(4) Add Simulation properties
+$- 1000 0 
+TITLE 32 50  #(5) Add polarization
+$- 1000 0 
+TITLE 107 35  #Vdd
+$1 1000 0 
+TITLE 82 49  #(6) Add simulation properties
+$- 1000 0 
+TITLE 83 37  #Vdrain
+$c 1000 0   0.45   0.50   0.95   1.00 
+TITLE 89 41  #VGate
+$c 1000 0   0.95   1.00   1.95   2.00 
+TITLE 95 34  #Vout
+$v 1000 0 
+FFIG C:\microwind2\Book on CMOS\MosSteps.MSK

@@ -1,0 +1,43 @@
+VERSION 3/22/2003 8:05:06 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\FramSimu.MSK
+BB(-22,34,131,118)
+SIMU #10.00
+REC(71,82,8,9,OP,64)
+REC(7,82,8,9,OP,192)
+REC(42,84,46,6,DN)
+REC(-22,84,46,6,DN)
+REC(74,68,2,2,CO)
+REC(112,68,2,2,CO)
+REC(48,68,2,2,CO)
+REC(10,68,2,2,CO)
+REC(9,67,18,4,PO)
+REC(73,67,18,4,PO)
+REC(96,67,19,4,PO)
+REC(32,67,19,4,PO)
+REC(47,56,4,15,ME)
+REC(73,67,4,44,ME)
+REC(111,56,4,15,ME)
+REC(9,67,4,44,ME)
+REC(91,67,5,4,PO)
+REC(27,67,5,4,PO)
+RLCC 12 108 17 108 1 #0.01
+RLCR 27 69 32 69 1 #1000
+RLCC 76 108 81 108 1 #0.01
+RLCR 91 69 96 69 1 #1000
+TITLE 11 72  #s1
+$v 1000 0 
+TITLE 48 60  #Gnd
+$0 500 0 
+TITLE -21 87  #pulse<Ve
+$p 500 0   3.00   3.01   5.01   5.02 
+TITLE 75 72  #s2
+$v 1000 0 
+TITLE 112 60  #Gnd
+$0 500 0 
+TITLE 43 87  #pulse>Ve
+$p 1000 0   3.00   3.01   5.01   5.02 
+TITLE 3 43  #Modifying the domain of the FRAM memory
+$- 1000 0 
+TITLE 3 34  #requires a high electrical field
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\FramSimu.MSK

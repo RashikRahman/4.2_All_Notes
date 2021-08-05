@@ -1,0 +1,43 @@
+VERSION 3/9/2003 5:36:02 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\EepromStates.MSK
+BB(15,8,55,46)
+SIMU #5.00
+REC(49,16,6,10,DN)
+REC(41,16,6,10,DN)
+REC(27,16,6,10,DN)
+REC(19,16,6,10,DN)
+REC(42,18,2,2,CO)
+REC(52,18,2,2,CO)
+REC(47,33,2,2,CO)
+REC(25,33,2,2,CO)
+REC(30,18,2,2,CO)
+REC(20,18,2,2,CO)
+REC(47,13,2,19,P2,0)
+REC(46,32,4,4,P2,0)
+REC(24,32,4,4,P2,0)
+REC(25,13,2,19,P2,2000)
+REC(25,13,2,16,PO)
+REC(47,13,2,16,PO)
+REC(24,32,26,4,ME)
+REC(29,17,4,10,ME)
+REC(19,8,26,4,ME)
+REC(41,12,4,9,ME)
+REC(51,17,4,10,ME)
+REC(19,12,4,9,ME)
+REC(25,16,2,10,DN)
+REC(47,16,2,10,DN)
+TITLE 15 40  #charged with e- (Appears in orange)
+$- 1000 0 
+TITLE 53 23  #DrainDischarged
+$v 1000 0 
+TITLE 31 23  #DrainCharged
+$v 1000 0 
+TITLE 26 34  #clockGate
+$c 1000 0   0.95   1.00   1.95   2.00 
+TITLE 21 14  #clockIn
+$c 1000 0   0.45   0.50   0.95   1.00 
+TITLE 23 46  #Floating gate used in EPROM and EEPROM memories
+$- 1000 0 
+TITLE 47 40  #discharged (Normal, red)
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\EepromStates.MSK

@@ -1,0 +1,117 @@
+VERSION 5/2/2003 11:22:22 AM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\DRamEDram.MSK
+BB(-57,-11,37,54)
+SIMU #20.00
+REC(29,25,6,6,OP,0)
+REC(29,5,6,6,OP,0)
+REC(-7,13,6,6,OP,8)
+REC(9,13,6,6,OP,8)
+REC(9,32,6,6,OP,8)
+REC(-48,34,3,4,DN)
+REC(-7,4,6,5,DN)
+REC(-45,34,7,4,DN)
+REC(-46,10,7,4,DN)
+REC(-7,12,6,7,DN)
+REC(-53,34,5,4,DN)
+REC(-53,10,5,4,DN)
+REC(-48,10,2,4,DN)
+REC(9,4,6,5,DN)
+REC(9,12,6,7,DN)
+REC(9,23,6,5,DN)
+REC(9,31,6,7,DN)
+REC(-7,9,6,3,DN)
+REC(29,5,6,7,DN)
+REC(29,15,6,6,DN)
+REC(29,24,6,7,DN)
+REC(29,21,6,3,DN)
+REC(29,12,6,3,DN)
+REC(9,28,6,3,DN)
+REC(9,9,6,3,DN)
+REC(-52,35,2,2,CO)
+REC(-48,4,2,2,CO)
+REC(-48,28,2,2,CO)
+REC(-52,11,2,2,CO)
+REC(31,27,2,2,CO)
+REC(31,17,2,2,CO)
+REC(31,7,2,2,CO)
+REC(11,34,2,2,CO)
+REC(11,24,2,2,CO)
+REC(-5,5,2,2,CO)
+REC(-5,15,2,2,CO)
+REC(11,24,2,2,CO)
+REC(-5,5,2,2,CO)
+REC(31,17,2,2,CO)
+REC(31,17,2,2,CO)
+REC(11,5,2,2,CO)
+REC(11,15,2,2,CO)
+REC(11,5,2,2,CO)
+REC(31,17,2,2,CO)
+REC(-48,7,2,11,PO)
+REC(-49,3,4,4,PO)
+REC(-49,27,4,4,PO)
+REC(7,28,10,3,PO)
+REC(-9,9,10,3,PO)
+REC(27,12,10,3,PO)
+REC(27,21,10,3,PO)
+REC(-48,31,2,10,PO)
+REC(7,9,10,3,PO)
+REC(-53,34,4,4,ME)
+REC(-56,3,22,4,ME)
+REC(-56,27,22,4,ME)
+REC(-53,10,4,4,ME)
+REC(30,16,4,4,ME)
+REC(7,14,10,4,ME)
+REC(-6,4,4,4,ME)
+REC(10,23,4,4,ME)
+REC(10,4,4,36,M2)
+REC(27,26,10,4,ME)
+REC(-9,14,10,4,ME)
+REC(10,4,4,4,ME)
+REC(27,6,10,4,ME)
+REC(7,33,10,4,ME)
+REC(-5,5,2,2,VI)
+REC(-52,11,2,2,VI)
+REC(-52,35,2,2,VI)
+REC(31,17,2,2,VI)
+REC(11,5,2,2,VI)
+REC(11,24,2,2,VI)
+REC(-53,1,4,45,M2)
+REC(30,3,4,30,M2)
+REC(-6,4,4,17,M2)
+TITLE -52 17  #BitLine
+$w 1000 0  0
+TITLE 24 27  #Vss
+$- 1000 0 
+TITLE -42 12  #Data2l
+$v 1000 0 
+TITLE -42 4  #WordLine
+$w 1000 0  0
+TITLE -42 36  #Data3l
+$v 1000 0 
+TITLE 4 -11  #Specific capacitor
+$- 1000 0 
+TITLE 32 35  #BL
+$- 1000 0 
+TITLE 24 13  #WL[0]
+$- 1000 0 
+TITLE 24 8  #Vss
+$- 1000 0 
+TITLE 24 22  #WL[1]
+$- 1000 0 
+TITLE -55 -4  #Parasitic junction capacitance
+$- 1000 0 
+TITLE -57 54  #Dynamic RAM cell
+$- 1000 0 
+TITLE -11 11  #WL
+$- 1000 0 
+TITLE -12 16  #Vss
+$- 1000 0 
+TITLE -5 22  #BL
+$- 1000 0 
+TITLE 10 2  #2 bits
+$- 1000 0 
+TITLE 29 0  #2 bits with shared bit line contact
+$- 1000 0 
+TITLE -6 1  #1 bit
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\DRamEDram.MSK

@@ -1,0 +1,55 @@
+VERSION 3/22/2003 12:02:08 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\FramCell.MSK
+BB(-65,21,-19,61)
+SIMU #20.00
+REC(-64,38,8,8,OP,192)
+REC(-28,31,8,8,OP,64)
+REC(-28,51,8,8,OP,192)
+REC(-48,38,8,8,OP,64)
+REC(-26,51,4,7,DN)
+REC(-26,42,4,6,DN)
+REC(-26,32,4,7,DN)
+REC(-46,38,4,7,DN)
+REC(-46,30,4,5,DN)
+REC(-62,38,4,7,DN)
+REC(-62,30,4,5,DN)
+REC(-26,48,4,3,DN)
+REC(-26,39,4,3,DN)
+REC(-46,35,4,3,DN)
+REC(-62,35,4,3,DN)
+REC(-25,44,2,2,CO)
+REC(-25,44,2,2,CO)
+REC(-45,31,2,2,CO)
+REC(-61,31,2,2,CO)
+REC(-61,31,2,2,CO)
+REC(-25,44,2,2,CO)
+REC(-25,44,2,2,CO)
+REC(-45,31,2,2,CO)
+REC(-29,39,10,3,PO)
+REC(-49,35,10,3,PO)
+REC(-29,48,10,3,PO)
+REC(-65,35,10,3,PO)
+REC(-49,40,10,4,ME)
+REC(-26,43,4,4,ME)
+REC(-65,40,10,4,ME)
+REC(-62,30,4,4,ME)
+REC(-29,33,10,4,ME)
+REC(-29,53,10,4,ME)
+REC(-46,30,4,4,ME)
+REC(-45,31,2,2,VI)
+REC(-25,44,2,2,VI)
+REC(-61,31,2,2,VI)
+REC(-62,30,4,18,M2)
+REC(-46,30,4,18,M2)
+REC(-26,29,4,32,M2)
+TITLE -64 51  #Pzt domain 1
+$- 1000 0 
+TITLE -48 51  #Pzt domain 2
+$- 1000 0 
+TITLE -63 27  #Fram memory point
+$- 1000 0 
+TITLE -28 26  #Two FRAM memory points
+$- 1000 0 
+TITLE -61 21  #(FRAM is only available starting 90nm technology)
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\FramCell.MSK
