@@ -1,9 +1,9 @@
-#include "GL/freeglut.h"
+#include <GL/freeglut.h>
 #include <cmath>
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include "vecmath.h"
+#include <vecmath.h>
 using namespace std;
 
 // Globals
@@ -21,12 +21,12 @@ vector<vector<unsigned> > vecf;
 // You will need more global variables to implement color and position changes
 
 
-// These are convenience functions which allow us to call OpenGL 
+// These are convenience functions which allow us to call OpenGL
 // methods on Vec3d objects
-inline void glVertex(const Vector3f &a) 
+inline void glVertex(const Vector3f &a)
 { glVertex3fv(a); }
 
-inline void glNormal(const Vector3f &a) 
+inline void glNormal(const Vector3f &a)
 { glNormal3fv(a); }
 
 
@@ -40,10 +40,10 @@ void keyboardFunc( unsigned char key, int x, int y )
         break;
     case 'c':
         // add code to change color here
-		cout << "Unhandled key press " << key << "." << endl; 
+		cout << "Unhandled key press " << key << "." << endl;
         break;
     default:
-        cout << "Unhandled key press " << key << "." << endl;        
+        cout << "Unhandled key press " << key << "." << endl;
     }
 
 	// this will refresh the screen so that the user sees the color change
@@ -103,7 +103,7 @@ void drawScene(void)
                                  {0.9, 0.5, 0.5, 1.0},
                                  {0.5, 0.9, 0.3, 1.0},
                                  {0.3, 0.8, 0.9, 1.0} };
-    
+
 	// Here we use the first color entry as the diffuse color
     glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diffColors[0]);
 
@@ -114,7 +114,7 @@ void drawScene(void)
 	// Note that the specular color and shininess can stay constant
     glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, specColor);
     glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, shininess);
-  
+
     // Set light properties
 
     // Light color (RGBA)
@@ -128,7 +128,7 @@ void drawScene(void)
 	// This GLUT method draws a teapot.  You should replace
 	// it with code which draws the object you loaded.
 	glutSolidTeapot(1.0);
-    
+
     // Dump the image to the screen.
     glutSwapBuffers();
 
@@ -174,7 +174,7 @@ int main( int argc, char** argv )
 
     glutInit(&argc,argv);
 
-    // We're going to animate it, so double buffer 
+    // We're going to animate it, so double buffer
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH );
 
     // Initial parameters for window position and size
