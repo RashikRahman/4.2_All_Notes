@@ -10,13 +10,13 @@ void display(){
     glClear(GL_COLOR_BUFFER_BIT);//This clears out the previous buffer so that we can see a single object moving rather than object overlays.
 
     glBegin(GL_QUADS);
-    glColor3f(1,0,0);
+    glColor3f(1,1,0.5);
     glVertex2f(xa,ya);
     glColor3f(1,1,0);
     glVertex2f(xb,yb);
-    glColor3f(0,1,0);
+    glColor3f(0,1,1);
     glVertex2f(xc,yc);
-    glColor3f(0,0,1);
+    glColor3f(1,0,1);
     glVertex2f(xd,yd);
     glEnd();
 
@@ -51,11 +51,11 @@ void display(){
             glRotatef(-45,0,0,1);// clock wise thus -45
             glutPostRedisplay();
             break;
-        case 'c':
+        case 'u':
             glScalef(2,2,1);// upscale
             glutPostRedisplay();
             break;
-        case 'z':
+        case 'i':
             glScalef(.5,.5,1);// downscale
             glutPostRedisplay();
             break;
@@ -68,8 +68,8 @@ int main(int argc, char **argv){
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE);
-    glutInitWindowSize(720,720);
-    glutInitWindowPosition(200,200);
+    glutInitWindowSize(800,800);
+    glutInitWindowPosition(100,100);
     glutCreateWindow("rashik");
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
