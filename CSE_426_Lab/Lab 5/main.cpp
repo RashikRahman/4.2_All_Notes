@@ -5,7 +5,9 @@
 #define pi 3.14159265
 
 float xa=0.2,ya=0.2, xb=-0.2,yb=0.2, xc=-0.2,yc=-0.2, xd=0.2,yd=-0.2;
-float ty=0.1, tx=0.1;
+float ty=0.1, tx=0.1,temp;
+int clock_wise=-45, anti_clock_wise=45;
+float gx = 2, gy = 2, sx = 0.5, sy = 0.5;
 
 void display(){
     glClear(GL_COLOR_BUFFER_BIT);//This clears out the previous buffer so that we can see a single object moving rather than object overlays.
@@ -120,54 +122,61 @@ void display(){
             //glTranslatef(-0.1,0,0);
             glutPostRedisplay();
             break;
+
         case 'q':
-            xa = xa * cos(45/360) - ya * sin(45/360);
-            ya = xa * sin(45/360) + ya * cos(45/360);
-
-            xb = xb * cos(45/360) - yb * sin(45/360);
-            yb = xb * sin(45/360) + yb * cos(45/360);
-
-            xc = xc * cos(45/360) - yc * sin(45/360);
-            yc = xc * sin(45/360) + yc * cos(45/360);
-
-            xd = xd * cos(45/360) - yd * sin(45/360);
-            yd = xd * sin(45/360) + yd * cos(45/360);
-            //glRotatef(45,0,0,1);// anticlock wise thus 45
+            temp = xa;
+            xa = xa*cos(anti_clock_wise) - ya*sin(anti_clock_wise);
+            ya = temp*sin(anti_clock_wise) + ya*cos(anti_clock_wise);
+            temp = xb;
+            xb = xb*cos(anti_clock_wise) - yb*sin(anti_clock_wise);
+            yb = temp*sin(anti_clock_wise) + yb*cos(anti_clock_wise);
+            temp = xc;
+            xc = xc*cos(anti_clock_wise) - yc*sin(anti_clock_wise);
+            yc = temp*sin(anti_clock_wise) + yc*cos(anti_clock_wise);
+            temp = xd;
+            xd = xd*cos(anti_clock_wise) - yd*sin(anti_clock_wise);
+            yd = temp*sin(anti_clock_wise) + yd*cos(anti_clock_wise);
             glutPostRedisplay();
             break;
+
         case 'e':
 
-            glRotatef(-45,0,0,1);// clock wise thus -45
+            temp = xa;
+            xa = xa*cos(clock_wise) - ya*sin(clock_wise);
+            ya = temp*sin(clock_wise) + ya*cos(clock_wise);
+            temp = xb;
+            xb = xb*cos(clock_wise) - yb*sin(clock_wise);
+            yb = temp*sin(clock_wise) + yb*cos(clock_wise);
+            temp = xc;
+            xc = xc*cos(clock_wise) - yc*sin(clock_wise);
+            yc = temp*sin(clock_wise) + yc*cos(clock_wise);
+            temp = xd;
+            xd = xd*cos(clock_wise) - yd*sin(clock_wise);
+            yd = temp*sin(clock_wise) + yd*cos(clock_wise);
             glutPostRedisplay();
             break;
         case 'c':
-            xa = xa * 2;
-            ya = xa * 2;
-
-            xb = xb * 2;
-            yb = xb * 2;
-
-            xc = xc * 2;
-            yc = xc * 2;
-
-            xd = xd * 2;
-            yd = xd * 2;
-            //glScalef(2,2,1);// upscale
+            xa = gx*xa;
+            ya = gy*ya;
+            xb = gx*xb;
+            yb = gy*yb;
+            xc = gx*xc;
+            yc = gy*yc;
+            xd = gx*xd;
+            yd = gy*yd;
             glutPostRedisplay();
             break;
+
+
         case 'z':
-            xa = xa /2;
-            ya = xa / 2;
-
-            xb = xb /2;
-            yb = xb / 2;
-
-            xc = xc / 2;
-            yc = xc /2;
-
-            xd = xd / 2;
-            yd = xd / 2;
-            //glScalef(.5,.5,1);// downscale
+             xa = sx*xa;
+            ya = sy*ya;
+            xb = sx*xb;
+            yb = sy*yb;
+            xc = sx*xc;
+            yc = sy*yc;
+            xd = sx*xd;
+            yd = sy*yd;
             glutPostRedisplay();
             break;
 
