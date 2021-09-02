@@ -57,12 +57,16 @@ void display(){
             if(xc<-0.5||xb<-0.5)
                 printf("Left");
             printf("\n");
+            //printf("%f %f",xa,ya);
 
-            //glTranslatef(0,0.1,0);
             glutPostRedisplay();
             break;
 
         case 's':
+            ya = ya-ty;
+            yb = yb-ty;
+            yc = yc-ty;
+            yd = yd-ty;
             if (xa<=0.5&&ya<=0.5&&xc>=-0.5&&yc>=-0.5)
                 printf("Inside");
             if(ya>0.5||yb>0.5)
@@ -74,15 +78,17 @@ void display(){
             if(xc<-0.5||xb<-0.5)
                 printf("Left");
             printf("\n");
-            ya = ya-ty;
-            yb = yb-ty;
-            yc = yc-ty;
-            yd = yd-ty;
+
             //glTranslatef(0,-0.1,0);
             glutPostRedisplay();
             break;
 
         case 'd':
+
+           xa = xa+tx;
+           xb = xb+tx;
+           xc = xc+tx;
+           xd = xd+tx;
            if (xa<=0.5&&ya<=0.5&&xc>=-0.5&&yc>=-0.5)
                 printf("Inside");
             if(ya>0.5||yb>0.5)
@@ -94,15 +100,15 @@ void display(){
             if(xc<-0.5||xb<-0.5)
                 printf("Left");
             printf("\n");
-            xa = xa+tx;
-            xb = xb+tx;
-            xc = xc+tx;
-            xd = xd+tx;
             //glTranslatef(0.1,0,0);
             glutPostRedisplay();
             break;
 
         case 'a':
+            xa = xa-tx;
+            xb = xb-tx;
+            xc = xc-tx;
+            xd = xd-tx;
             if (xa<=0.5&&ya<=0.5&&xc>=-0.5&&yc>=-0.5)
                 printf("Inside");
             if(ya>0.5||yb>0.5)
@@ -115,10 +121,7 @@ void display(){
                 printf("Left");
 
             printf("\n");
-            xa = xa-tx;
-            xb = xb-tx;
-            xc = xc-tx;
-            xd = xd-tx;
+
             //glTranslatef(-0.1,0,0);
             glutPostRedisplay();
             break;
@@ -155,6 +158,7 @@ void display(){
             yd = temp*sin(clock_wise) + yd*cos(clock_wise);
             glutPostRedisplay();
             break;
+
         case 'c':
             xa = gx*xa;
             ya = gy*ya;
@@ -169,7 +173,7 @@ void display(){
 
 
         case 'z':
-             xa = sx*xa;
+            xa = sx*xa;
             ya = sy*ya;
             xb = sx*xb;
             yb = sy*yb;
