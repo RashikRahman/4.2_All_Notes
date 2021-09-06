@@ -1,0 +1,40 @@
+                                     Md. Remon Hasan Apu, ID: 17101086
+ 
+
+a. Did you collaborate with anyone in the class? If so, let us know who you talked to
+and what sort of help you gave or received.
+
+Answer: I didn’t collaborate with anyone of my class. I just followed the class lectures and learned some extra things from Google, Stackoverflow, Qura and Youtube.
+
+b. Were there any references (books, papers, websites, etc.) that you found
+particularly helpful for completing your assignment? Please provide a list.
+
+Answer: Stackoverflow and ‘community.khronos.org’ helped me a lot to complete this assignment, especially the color change and rotation part. I also took help from reddit.com opengl discussion.
+
+c. Are there any known problems with your code? If so, please provide a list and, if
+possible, describe what you think the cause is and how you might fix them if you had
+more time or motivation. This is very important, as we’re much more likely to assign
+partial credit if you help us understand what’s going on.
+
+Answer: The light source doesn't rotate full 360 degrees. I didn’t spend too much time as it was
+still working enough well as per requirement. I faced some problems like not rotating the object before creating the model. I implemented the code to rotate after drawing the model as a result it was showing the object to rotate. As a result though my implementation had potential to get the job done but it was showing the wrong outcome. After that, I tried to move the camera in a circular orientation instead of rotating the object itself. But later I got myself corrected and was able to rotate the object successfully. One needs to keep in mind the order to tasks done by the IDE. 
+
+d. Did you do any extra work? If so, let us know how to use the additional features. If
+there was a substantial amount of work involved, describe what and how you did it.
+
+Answer: No, I was not able to do any extra work.
+
+e. Got any comments about this assignment that you’d like to share? Was it too long?
+Too hard? Were the requirements unclear? Did you have fun, or did you hate it? Did you
+learn something, or was it a total waste of your time?
+
+Answer: The assignment was not too long or too hard. This was not that hard because someone with basic understanding of coding and OpenGl will be able to do it effortlessly. In short I can't say I didn't enjoy the task. But I had no  clue about smooth transitions of colors.
+
+
+
+   
+
+
+
+
+

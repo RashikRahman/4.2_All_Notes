@@ -1,0 +1,14 @@
+Code Compilation - Command Line : Linux - VS code
+-----------------------------------------------------
+1. g++ main.cpp -lglut -lGL -lGLEW -lGLU -o main
+2. ./main
+
+----------------------------------------------------
+Implementation Key's for checking the output
+----------------------------------------------------
+1. Press "r" for rotation
+2. Press "c" for color changes
+3. Press Up key to move the light positi on the top
+4. Press Down key to move the light position to downword
+5. Press Right key to move the light position to the Right
+6. Press Left key to move the loght position to the Left 
