@@ -9,7 +9,7 @@ float angle= 45;
 
 
 void spin(void){
-    angle = angle+0.1;//increasing the additional value will speedup rotation.
+    angle = angle+0.1;//increasing the addition value will speedup rotation.
     glutPostRedisplay();
 }
 void display(void){
@@ -20,7 +20,7 @@ void display(void){
     glRotatef(angle,1,0,0);
     glRotatef(angle,0,1,0);
     glRotatef(angle,0,0,1);
-    glutWireCube(2);
+    glutWireCube(2);//There are many shapes of glutWire here we use cube and its size is 2.
     glutSwapBuffers(); //works like glflush but its used for 3d objects.
 
  }
@@ -37,7 +37,7 @@ void reshape(int w, int h){
 int main(int argc, char **argv){
 
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_DOUBLE);
+    glutInitDisplayMode(GLUT_DOUBLE);//In 2D we used glut_single but for 3D we need to be dynamic thus using glut_double
     glutInitWindowSize(800,800);
     glutInitWindowPosition(100,100);
     glutCreateWindow("rashik");
