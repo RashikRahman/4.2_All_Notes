@@ -6,7 +6,6 @@ User Manual in ReadMe.txt
 
 #include<windows.h>
 #include<bits/stdc++.h>
-#include<GLFW/glfw3.h>
 #include <GL/glut.h>
 #include <cmath>
 #include <iostream>
@@ -42,13 +41,16 @@ static void display(void)
 
     glPushMatrix();
         glTranslated(0,0,-6);
+        glRotated(60,1,0,0);
         if (rotation_lock==1) //If auto rotate enabled
         {
-            glRotated(60,1,0,0);
+
             glRotated(a,0,0,1);
         }
 
-        glutSolidSphere(1,slices,stacks);
+    //glutSolidSphere(1,slices,stacks);
+    glutSolidTorus(0.2,0.8,slices,stacks);
+    //glutSolidCone(1,1,slices,stacks);
     glPopMatrix();
 
     //Color for the object

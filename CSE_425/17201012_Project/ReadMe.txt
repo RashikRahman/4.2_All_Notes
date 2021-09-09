@@ -12,7 +12,7 @@ Sec: A
 'd': Move right
 'a': Move left
 
-'c': Color toggle(Changes color each time pressed
+'c': Color toggle(Changes color each time pressed)
 't': Enable/Disable smooth transitions among colors
 
 UP_arrow_key: UP key to move the light source UP

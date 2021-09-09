@@ -17,9 +17,9 @@ void display(void){
     glClear(GL_COLOR_BUFFER_BIT);
     glLoadIdentity();
     gluLookAt(0,0,7,0,0,0,0,1,0);
-    glRotatef(angle,1,0,0);
-    glRotatef(angle,0,1,0);
-    glRotatef(angle,0,0,1);
+    glRotatef(angle,1,0,0);//rotate with x axis
+    glRotatef(angle,0,1,0);//rotate with y axis
+    glRotatef(angle,0,0,1);//rotate with z axis
     glutWireCube(2);//There are many shapes of glutWire here we use cube and its size is 2.
     glutSwapBuffers(); //works like glflush but its used for 3d objects.
 
