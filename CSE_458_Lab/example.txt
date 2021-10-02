@@ -1,0 +1,17 @@
+// DSCH 2.7f
+// 10/2/2021 7:53:13 PM
+// E:\4.2_All_Notes\CSE_458_Lab\example.sch
+
+module example( A,out1);
+ input A;
+ output out1;
+ pmos #(17) pmos(out1,vdd,A); // 2.0u 0.12u
+ pmos #(10) pmos(vss,out1,A); // 2.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 A=~A;
+
+// Simulation parameters
+// A CLK 10.000 10.000
