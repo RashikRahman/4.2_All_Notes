@@ -60,14 +60,45 @@ static void display(void)
                                  {0.9, 0.7, 0.2, 1.0},
                                  {0.3, 0.8, 0.9, 1.0}};
 
+     GLfloat diffColors2[35][4] = {{0.1, 0, 0, 1.0},
+                                 {0.2, 0, 0, 1.0},
+                                 {0.3, 0, 0, 1.0},
+                                 {0.4, 0, 0, 1.0},
+                                 {0.5, 0, 0, 1.0},
+                                 {0.6, 0, 0, 1.0},
+                                 {0.7, 0, 0, 1.0},
+                                 {0.8, 0, 0, 1.0},
+                                 {0.9, 0, 0, 1.0},
+                                 {0.8, 0.1, 0, 1.0},
+                                 {0.6, 0.1, 0, 1.0},
+                                 {0.4, 0.1, 0, 1.0},
+                                 {0.2, 0.2, 0, 1.0},
+                                 {0, 0.3, 0, 1.0},
+                                 {0, 0.4, 0, 1.0},
+                                 {0, 0.5, 0, 1.0},
+                                 {0, 0.6, 0, 1.0},
+                                 {0, 0.7, 0, 1.0},
+                                 {0, 0.8, 0, 1.0},
+                                 {0, 0.9, 0, 1.0},
+                                 {0, 0.8, 0, 1.0},
+                                 {0, 0.6, 0.1, 1.0},
+                                 {0, 0.4, 0.1, 1.0},
+                                 {0, 0.3, 0.1, 1.0},
+                                 {0, 0.2, 0.1, 1.0},
+                                 {0, 0, 0.2, 1.0},
+                                 {0, 0, 0.3, 1.0},
+                                 {0, 0, 0.4, 1.0},
+                                 {0, 0, 0.5, 1.0},
+                                 {0, 0, 0.6, 1.0},
+                                 {0, 0, 0.7, 1.0},
+                                 {0, 0, 0.8, 1.0},
+                                 {0, 0, 0.9, 1.0},
+                                 {0, 0, 1, 1.0}};
+
     if(smotoh_color_transition_lock==1) //If auto color transition enabled
     {
 
-            glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diffColors[colorCounter]);
-            colorCounter+=1;
-            if(colorCounter==5)
-                colorCounter=0;
-            Sleep(500);
+        glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diffColors2[colorCounter]);
 
 
     }
@@ -117,16 +148,18 @@ static void key(unsigned char key, int x, int y)
             break;
 
         case 'c': //Color toggle
+            smotoh_color_transition_lock=0;
             colorCounter += 1;
             if(colorCounter>5)
                 colorCounter=0;
             break;
 
         case 't': //Enable/Disable smooth color transition
-            if(smotoh_color_transition_lock==0)
-                smotoh_color_transition_lock=1;
-            else
-                smotoh_color_transition_lock=0;
+
+            smotoh_color_transition_lock=1;
+            colorCounter += 1;
+            if(colorCounter>35)
+                colorCounter=0;
             break;
 
         case 'r': //Enable/Disable auto rotation
