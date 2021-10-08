@@ -1,0 +1,8 @@
+prefix=/mingw64
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: shared-mime-info
+Description: Freedesktop common MIME database
+Version: 2.0
+Cflags: -I${includedir}
