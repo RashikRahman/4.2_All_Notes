@@ -1,5 +1,0 @@
-first(S): 	 ['b', 'x']
-first(A): 	 ['b', 'x']
-first(B): 	 ['c']
-first(C): 	 ['d']
-first(D): 	 ['e']
