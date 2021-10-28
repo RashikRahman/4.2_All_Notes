@@ -20,12 +20,7 @@ int main(void)
     //up-left
     else if(x1<xmin && y1>ymax)
     {
-        x3 = xmin;
-        y3 = y1+(y2-y1)*((xmin-x1)/(x2-x1));
-        if(x3>=xmin && x3<=xmax && y3>=ymin && y3<=ymax)
-        {
-            printf("%f %f\n",x3, y3);
-        }
+
         x4 = x1+(x2-x1)*((ymax-y1)/(y2-y1));
         y4 = ymax;
         if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
@@ -37,12 +32,7 @@ int main(void)
     //up-right
     else if(x1>xmax && y1>ymax)
     {
-        x3 = xmax;
-        y3 = y1+(y2-y1)*((xmax-x1)/(x2-x1));
-        if(x3>=xmin && x3<=xmax && y3>=ymin && y3<=ymax)
-        {
-            printf("%f %f\n",x3, y3);
-        }
+
         x4 = x1+(x2-x1)*((ymax-y1)/(y2-y1));
         y4 = ymax;
         if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
@@ -54,12 +44,7 @@ int main(void)
     //down-left
     else if(x1<xmin && y1<ymin)
     {
-        x3 = xmin;
-        y3 = y1+(y2-y1)*((xmin-x1)/(x2-x1));
-        if(x3>=xmin && x3<=xmax && y3>=ymin && y3<=ymax)
-        {
-            printf("%f %f\n",x3, y3);
-        }
+
         x4 = x1+(x2-x1)*((ymin-y1)/(y2-y1));
         y4 = ymin;
         if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
@@ -71,12 +56,7 @@ int main(void)
     //down-right
     else if(x1>xmax && y1<ymin)
     {
-        x3 = xmax;
-        y3 = y1+(y2-y1)*((xmax-x1)/(x2-x1));
-        if(x3>=xmin && x3<=xmax && y3>=ymin && y3<=ymax)
-        {
-            printf("%f %f\n",x3, y3);
-        }
+
         x4 = x1+(x2-x1)*((ymin-y1)/(y2-y1));
         y4 = ymin;
         if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
@@ -88,44 +68,44 @@ int main(void)
     //up
     else if(y1>=ymax)
     {
-        x3 = x1+(x2-x1)*((ymax-y1)/(y2-y1));
-        y3 = ymax;
-        if(x3>=xmin && x3<=xmax && y3>=ymin && y3<=ymax)
+        x4 = x1+(x2-x1)*((ymax-y1)/(y2-y1));
+        y4 = ymax;
+        if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
         {
-            printf("%f %f\n",x3, y3);
+            printf("%f %f\n",x4, y4);
         }
         flag1 = 5;
     }
     //left
     else if(x1<=xmin)
     {
-        x3 = xmin;
-        y3 = y1+(y2-y1)*((xmin-x1)/(x2-x1));
-        if(x3>=xmin && x3<=xmax && y3>=ymin && y3<=ymax)
+        x4 = xmin;
+        y4 = y1+(y2-y1)*((xmin-x1)/(x2-x1));
+        if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
         {
-            printf("%f %f\n",x3, y3);
+            printf("%f %f\n",x4, y4);
         }
         flag1 = 6;
     }
     //right
     else if(x1>=xmax)
     {
-        x3 = xmax;
-        y3 = y1+(y2-y1)*((xmax-x1)/(x2-x1));
-        if(x3>=xmin && x3<=xmax && y3>=ymin && y3<=ymax)
+        x4 = xmax;
+        y4 = y1+(y2-y1)*((xmax-x1)/(x2-x1));
+        if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
         {
-            printf("%f %f\n",x3, y3);
+            printf("%f %f\n",x4, y4);
         }
         flag1 = 7;
     }
     //down
     else if(y1<=ymin)
     {
-        x3 = x1+(x2-x1)*((ymin-y1)/(y2-y1));
-        y3 = ymin;
-        if(x3>=xmin && x3<=xmax && y3>=ymin && y3<=ymax)
+        x4 = x1+(x2-x1)*((ymin-y1)/(y2-y1));
+        y4 = ymin;
+        if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
         {
-            printf("%f %f\n",x3, y3);
+            printf("%f %f\n",x4, y4);
         }
         flag1 = 8;
     }
@@ -151,12 +131,7 @@ int main(void)
         {
             printf("%f %f\n",x3, y3);
         }
-        x4 = x1+(x2-x1)*((ymax-y1)/(y2-y1));
-        y4 = ymax;
-        if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
-        {
-            printf("%f %f\n",x4, y4);
-        }
+
         flag2 = 1;
     }
     //up-right
@@ -168,12 +143,7 @@ int main(void)
         {
             printf("%f %f\n",x3, y3);
         }
-        x4 = x1+(x2-x1)*((ymax-y1)/(y2-y1));
-        y4 = ymax;
-        if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
-        {
-            printf("%f %f\n",x4, y4);
-        }
+
         flag2 = 2;
     }
     //down-left
@@ -185,12 +155,7 @@ int main(void)
         {
             printf("%f %f\n",x3, y3);
         }
-        x4 = x1+(x2-x1)*((ymin-y1)/(y2-y1));
-        y4 = ymin;
-        if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
-        {
-            printf("%f %f\n",x4, y4);
-        }
+
         flag2 = 3;
     }
     //down-right
@@ -202,12 +167,7 @@ int main(void)
         {
             printf("%f %f\n",x3, y3);
         }
-        x4 = x1+(x2-x1)*((ymin-y1)/(y2-y1));
-        y4 = ymin;
-        if(x4>=xmin && x4<=xmax && y4>=ymin && y4<=ymax)
-        {
-            printf("%f %f\n",x4, y4);
-        }
+
         flag2 = 4;
     }
     //up
