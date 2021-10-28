@@ -31,7 +31,7 @@ void display(){
 
 
 
-       glBegin(GL_POLYGON);
+        glBegin(GL_POLYGON);
         glColor3f(.7, 0, 0);
 
         for(float theta=0; theta<360; theta+=.1){
