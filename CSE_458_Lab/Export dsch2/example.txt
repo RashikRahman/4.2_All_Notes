@@ -1,10 +1,17 @@
 // DSCH 2.7f
-// 2004/08/20 03:09:33 È.Ù
+// 10/29/2021 11:06:09 PM
 // example
 
-module example( );
+module example( clk1,out1);
+ input clk1;
+ output out1;
+ pmos #(17) pmos(out1,vdd,clk1); // 2.0u 0.12u
+ nmos #(17) nmos(out1,vss,clk1); // 1.0u 0.12u
 endmodule
 
 // Simulation parameters in Verilog Format
+always
+#1000 clk1=~clk1;
 
 // Simulation parameters
+// clk1 CLK 10.00 10.00

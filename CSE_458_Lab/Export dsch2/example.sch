@@ -1,0 +1,4 @@
+DSCH 2.7f
+VERSION 10/29/2021 11:54:37 PM
+BB(-15,-15,70,70)
+FFIG example.sch

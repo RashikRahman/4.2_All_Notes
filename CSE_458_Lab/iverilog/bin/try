@@ -7,9 +7,9 @@
 :vpi_module "E:\4.2_All_Notes\CSE_458_Lab\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "E:\4.2_All_Notes\CSE_458_Lab\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "E:\4.2_All_Notes\CSE_458_Lab\iverilog\lib\ivl\va_math.vpi";
-S_000002a78d6e2db0 .scope module, "try" "try" 2 1;
+S_0000020491682db0 .scope module, "try" "try" 2 1;
  .timescale 0 0;
-    .scope S_000002a78d6e2db0;
+    .scope S_0000020491682db0;
 T_0 ;
     %vpi_call 2 4 "$display", "This is a simple code" {0 0 0};
     %vpi_call 2 5 "$finish" {0 0 0};

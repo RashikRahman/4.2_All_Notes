@@ -8,12 +8,7 @@ module stimulus;
 	// Outputs
 	wire o;
 	// Instantiate the Unit Under Test (UUT)
-	three uut (
-		.x(x), 
-		.y(y), 
-		.z(z),
-		.o(o)
-	);
+	three uut (x,y,z,o);
  
 	initial begin
 		// Initialize Inputs
@@ -21,13 +16,9 @@ module stimulus;
 	y = 0;
 	z = 0;
  	
-	#20 z =1;
-	#20 y =1;
-	#20 x =1;
-	#20 z =0;
-	#20 y =0;
-	#20 z = 1;	  
-	#40;
+	#20 z =1;y =1;x =1;
+	#20 z =0;y =0;x = 1;	  
+
     end  
  
 		initial begin

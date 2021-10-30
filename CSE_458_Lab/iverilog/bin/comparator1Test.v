@@ -7,11 +7,7 @@ module test;
 	wire z;
 
 
-	comparator uut (  //unit under test
-	.x(x), 
-	.y(y), 
-	.z(z) 
-	);
+	comparator uut (x,y,z);
 
 initial begin
 
