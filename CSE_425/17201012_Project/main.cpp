@@ -48,9 +48,8 @@ static void display(void)
             glRotated(a,0,0,1);
         }
 
-    //glutSolidSphere(1,slices,stacks);
-    glutSolidTorus(0.2,0.8,slices,stacks);
-    //glutSolidCone(1,1,slices,stacks);
+    glutSolidSphere(1,slices,stacks);
+
     glPopMatrix();
 
     //Color for the object
@@ -97,10 +96,7 @@ static void display(void)
 
     if(smotoh_color_transition_lock==1) //If auto color transition enabled
     {
-
         glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diffColors2[colorCounter]);
-
-
     }
 
     else

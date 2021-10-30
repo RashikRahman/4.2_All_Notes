@@ -22,6 +22,9 @@ RIGHT _arrow_key: : RIGHT key to move the light source RIGHT
 
 'r': Enable/Disable auto spin of the object
 
+'+': smoothens suface
+'-': makes surface edge rough
+
 ###Mouse Function
 
 'e': Switch between rotation or zoom using mouse action. When pressed once you can zoom-in with left click and zoom-out with right click of mouse. When pressed again you can rotate anticlockwise with with left click 
