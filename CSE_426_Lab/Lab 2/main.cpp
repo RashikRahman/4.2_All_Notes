@@ -60,16 +60,17 @@ void display(){
 
 
  }
+//main function will remain same for all code.
 
-int main(int argc, char **argv){
+int main(int argc, char **argv){ // command line argument
 
-    glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE);
+    glutInit(&argc, argv); //initialize glut with command line argument
+    glutInitDisplayMode(GLUT_SINGLE); //when a object is static then we use single mode otherwise when the object is moving we can use double or single mode.
     glutInitWindowSize(700,700);
-    glutInitWindowPosition(300,300);
-    glutCreateWindow("rashik");
-    glutDisplayFunc(display);
-    glutMainLoop();
+    glutInitWindowPosition(300,300);//x,y
+    glutCreateWindow("rashik");//window title
+    glutDisplayFunc(display); //what function will be displayed.
+    glutMainLoop(); //to keep the window open \ otherwise the window will dissapear, its just like cv2.waitkey(0)
     return 0;
 
  }
